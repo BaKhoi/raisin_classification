@@ -1,6 +1,6 @@
 # Raisin Classification Using Support Vector Machine
 
-![](2024-07-02-12-06-42.png)
+![](images/2024-07-02-12-06-42.png)
 
 ## Requirements
 - Python 3.9+
