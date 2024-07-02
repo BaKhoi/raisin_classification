@@ -15,19 +15,23 @@ def get_input():
     for i in range(len(features)):
         feature = float(input(f"Enter feature {features[i]}: "))
         user_input.append(feature)
+    
     return user_input
 
 
 
 # Function to predict from input
 def predict_raisin(model, user_input):
+    
     # Convert user input to numpy array (example: [[feature1, feature2, ...]])
     input_data = np.array(user_input).reshape(1, -1)
     prediction = model.predict(input_data)
+    
     return prediction
 
+
 def convert_to_category(prediction):
-    label_mapping = {0: "Kecimen", 1: "Besni"}
+    label_mapping = {0: "Besni", 1: "Kecimen"}
     return label_mapping[prediction[0]]
 
 
@@ -38,10 +42,10 @@ def main():
     loaded_model = pickle.load(open(filename, 'rb'))
     
     # Get input from user
-    input = get_input()
+    user_input = get_input()
     
     # Predict 
-    prediction = predict_raisin(loaded_model, input)
+    prediction = predict_raisin(loaded_model, user_input)
     print(f'\nThe features belong to {convert_to_category(prediction)} class')
     
 
