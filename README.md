@@ -13,7 +13,7 @@
 ```
 git clone https://github.com/BaKhoi/raisin_classification.git
 
-cd rainsin_classification
+cd raisin_classification
 
 ```
 
