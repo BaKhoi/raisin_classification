@@ -4,9 +4,12 @@
 
 ## Requirements
 - Python 3.9+
-- `numpy`
-- `scikit-learn`
+- `numpy==1.26.4`
+- `scikit-learn==1.3.1`
 - `pickle`
+- `matplotlib==3.8.4`
+- `pandas==2.2.1`
+- `matplotlib==3.8.4`
 
 ## Installation
 1. Clone the repository
